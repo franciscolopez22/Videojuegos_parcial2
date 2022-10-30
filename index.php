@@ -18,7 +18,7 @@
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container">
                     <h1 class="display-4">Videojuegos de multiples plataformas</h1>
-                    <p class="lead">En esta pagina podras ver todos los juegos que estan a la venta de diferentes plataformas y con sus respectivos precios.</p>
+                    <p class="lead">En esta página podras ver todos los juegos que estan a la venta de diferentes plataformas y con sus respectivos precios.</p>
                     </div>
                 </div>
             </div>
