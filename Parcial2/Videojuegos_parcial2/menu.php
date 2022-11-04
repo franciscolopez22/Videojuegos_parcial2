@@ -10,7 +10,7 @@
         <a class="nav-link" href="consultarJuegos.php">Consultar</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Registrar</a>
+        <a class="nav-link" href="registrarDatos.php">Registrar</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -18,7 +18,7 @@
         </a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Inicio</a>
-          <a class="dropdown-item" href="#">Registrar</a>
+          <a class="dropdown-item" href="registrarDatos.php">Registrar</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Consultar</a>
         </div>

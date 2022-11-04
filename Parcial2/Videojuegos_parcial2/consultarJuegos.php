@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica de web con bases de datos</title>
+    <title>Juegos</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
 </head>
@@ -48,7 +48,7 @@
                             <td><?php echo $row["desarrolladores"]; ?></td>
                             <td><?php echo $row["peso_almacenamiento"]; ?>GB</td>
                             <td>
-                                <a href="#" class="btn btn-primary">Editar</a><br>
+                                <a href="actualizarJuegos.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary">Editar</a><br>
                                 <a href="#" class="btn btn-danger">Eliminar</a>
                             </td>
                         </tr>
