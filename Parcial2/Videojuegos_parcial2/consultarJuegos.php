@@ -49,7 +49,7 @@
                             <td><?php echo $row["peso_almacenamiento"]; ?>GB</td>
                             <td>
                                 <a href="actualizarJuegos.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary">Editar</a><br>
-                                <a href="#" class="btn btn-danger">Eliminar</a>
+                                <a href="eliminarJuego.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger">Eliminar</a>
                             </td>
                         </tr>
                       <?php 
