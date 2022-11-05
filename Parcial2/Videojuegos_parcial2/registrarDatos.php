@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Registrar Videojuego</h1><hr>
+                <h1>Registrar Videojuegos</h1><hr>
                 <form method="post" action="guardarDatos.php">
                     <div class="form-group">
                         <label for="">Nombre:</label>

@@ -11,6 +11,7 @@
 
     $sql = "INSERT INTO juegos (nombre, plataforma, precio, descripcion, desarrolladores, peso_almacenamiento)". 
     "VALUES ('".$nombre."', '".$plataforma."', ".$precio.", '".$descripcion."', '".$desarrolladores."', ".$peso_almacenamiento.")";
+
     if($conexion->query($sql) === TRUE){
         echo "Registro guardado con Éxito <a href='consultarJuegos.php'>Regresar</a>";
     } else {
