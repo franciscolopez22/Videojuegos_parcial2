@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-11-2022 a las 03:43:20
+-- Tiempo de generación: 08-11-2022 a las 01:35:10
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -58,6 +58,31 @@ INSERT INTO `juegos` (`id`, `nombre`, `precio`, `plataforma`, `descripcion`, `de
 (16, 'Halo Infinite', 850, 'Xbox One, Microsoft Windows y Xbox Series X|S', 'Halo Infinite es un videojuego de disparos en primera persona de la franquicia de videojuegos de ciencia ficción creada por Bungie Studios y actualmente desarrollada por 343 Industries.', '343 Industries', 50),
 (17, 'Minecraft', 800, 'Ps5/Ps4/Ps3/Xbox360/XboxOne/XboxSX/XboxSS/NintendoSwitch/PC/Mac/IOS/Android/DS', 'Minecraft es un videojuego de construcción de tipo mundo abierto o sandbox creado originalmente por el sueco Markus Persson, ? y posteriormente desarrollado por Mojang Studios.', 'Mojang Studios', 4);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `juegos_proximos`
+--
+
+CREATE TABLE `juegos_proximos` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `precio` int(11) NOT NULL,
+  `plataforma` varchar(100) NOT NULL,
+  `descripcion` varchar(300) NOT NULL,
+  `desarrolladores` varchar(300) NOT NULL,
+  `peso_almacenamiento` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `juegos_proximos`
+--
+
+INSERT INTO `juegos_proximos` (`id`, `nombre`, `precio`, `plataforma`, `descripcion`, `desarrolladores`, `peso_almacenamiento`) VALUES
+(1, 'God of War: RagnarÃ¶k (Proximo)', 1700, 'Ps5/Ps4', 'Es un proximo juego de accion y aventuras en desarrollo por Santa Monica Studio y que sera publicado por Sony Interactive Entertainment.                                                                         ', 'Santa Monica Studio', 90),
+(2, 'Marvels Spider-Man 2 (Proximo)', 0, 'Ps5', '?                        ', 'Insomniac Games', 100),
+(3, 'Sonic Frontiers (Proximo)', 800, 'Nintendo Switch/PlayStation 5/PlayStation 4/Xbox One/Xbox Series X-S/Microsoft Windows', 'Es un videojuego proximo de plataformas desarrollado por Sonic Team y publicado por Sega.                        ', 'Sonic Team', 15);
+
 --
 -- Índices para tablas volcadas
 --
@@ -69,6 +94,12 @@ ALTER TABLE `juegos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `juegos_proximos`
+--
+ALTER TABLE `juegos_proximos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -77,6 +108,12 @@ ALTER TABLE `juegos`
 --
 ALTER TABLE `juegos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT de la tabla `juegos_proximos`
+--
+ALTER TABLE `juegos_proximos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

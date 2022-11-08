@@ -22,9 +22,9 @@
           Juegos Proximos
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="registrarDatos.php">Registrar</a>
+          <a class="dropdown-item" href="registrarDatosProximos.php">Registrar</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="consultarJuegos.php">Consultar</a>
+          <a class="dropdown-item" href="consultarJuegosProximos.php">Consultar</a>
         </div>
       </li>
     </ul>
